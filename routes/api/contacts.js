@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+
 const { auth, validation, ctrlWrapper } = require("../../middlewares");
 const { joiSchema, favoriteJoiSchema } = require("../../models/contact");
 const { contacts: ctrl } = require("../../controllers");
